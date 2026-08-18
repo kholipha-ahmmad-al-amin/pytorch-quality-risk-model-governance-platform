@@ -1,0 +1,2 @@
+CREATE TABLE model_versions (id VARCHAR(80) PRIMARY KEY, status VARCHAR(30) NOT NULL, trained_at TIMESTAMP, approved_at TIMESTAMP);
+CREATE TABLE model_audits (id VARCHAR(80) PRIMARY KEY, model_id VARCHAR(80) NOT NULL, action VARCHAR(80) NOT NULL, actor VARCHAR(120) NOT NULL);
